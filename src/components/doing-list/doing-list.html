@@ -1,0 +1,11 @@
+
+<ion-list>
+<ion-item-sliding *ngFor="let progress of progressItems; let i=index">
+   <ion-item>{{progress}}</ion-item> 
+   <ion-item-options side="right">
+       <button ion-button color="secondary" (click)="AddCompletedItems(i)">
+           <ion-icon name="refresh"></ion-icon>
+       </button>
+   </ion-item-options>
+</ion-item-sliding>
+</ion-list>
